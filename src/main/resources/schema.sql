@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS Notes;
+  
+CREATE TABLE Notes(
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  day VARCHAR(250) NOT NULL,
+  month VARCHAR(250) NOT NULL,
+  year VARCHAR(250) DEFAULT NULL,
+  note VARCHAR(250) DEFAULT NULL
+);
+
+Insert into Notes values(1,12,4,2020,'ABC');
+Insert into Notes values(2,14,4,2021,'DEF');
